@@ -14,6 +14,7 @@
         rel="stylesheet">
 
     <!-- Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -194,7 +195,57 @@
                 <h2>Upcoming Events</h2>
             </div>
 
-            <div class="events-list">
+            <!-- Slider Container -->
+            <div class="events-slider-container fade-in-up">
+                <div class="events-slider">
+                    <!-- Slide 1 -->
+                    <div class="event-slide">
+                        <img src="https://placehold.co/800x400/0F3D2E/FFF?text=Upcoming+Event+1" alt="Event 1">
+                        <div class="event-slide-content">
+                            <span class="event-slide-date">March 15, 2026</span>
+                            <h3>Annual Youth Conference</h3>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="event-slide">
+                        <img src="https://placehold.co/800x400/1F6F4A/FFF?text=Upcoming+Event+2" alt="Event 2">
+                        <div class="event-slide-content">
+                            <span class="event-slide-date">April 02, 2026</span>
+                            <h3>Easter Special Service</h3>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="event-slide">
+                        <img src="https://placehold.co/800x400/2FA36B/FFF?text=Upcoming+Event+3" alt="Event 3">
+                        <div class="event-slide-content">
+                            <span class="event-slide-date">May 10, 2026</span>
+                            <h3>Mothers Day Celebration</h3>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="event-slide">
+                        <img src="https://placehold.co/800x400/C6A75E/FFF?text=Upcoming+Event+4" alt="Event 4">
+                        <div class="event-slide-content">
+                            <span class="event-slide-date">June 20, 2026</span>
+                            <h3>Leadership Summit</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Controls -->
+                <button class="slider-btn prev-btn" aria-label="Previous event">&larr;</button>
+                <button class="slider-btn next-btn" aria-label="Next event">&rarr;</button>
+
+                <!-- Slider Indicators -->
+                <div class="slider-indicators">
+                    <span class="indicator active" data-index="0"></span>
+                    <span class="indicator" data-index="1"></span>
+                    <span class="indicator" data-index="2"></span>
+                    <span class="indicator" data-index="3"></span>
+                </div>
+            </div>
+
+            <div class="events-list mt-large">
                 <div class="event-card fade-in-up">
                     <div class="event-date">
                         <span class="day">SUN</span>
@@ -218,6 +269,38 @@
                         <span class="event-meta">📍 Main Sanctuary & Online</span>
                     </div>
                     <a href="#" class="btn btn-sm btn-outline">Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-contact">
+        <div class="contact-header text-center fade-in-up">
+            <h6 class="section-label">Contact Us</h6>
+            <h2>Get In Touch</h2>
+        </div>
+        <div class="container">
+            <div class="contact-card fade-in-up">
+                <div class="contact-form-side">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Send Now</button>
+                    </form>
+                </div>
+                <div class="contact-image-side"
+                    style="background-image: url('https://placehold.co/800x1000/1F6F4A/FFF?text=Contact+Us');">
                 </div>
             </div>
         </div>
@@ -254,9 +337,9 @@
             <div class="footer-links">
                 <h4>Connect</h4>
                 <div class="social-links">
-                    <a href="#">Facebook</a>
-                    <a href="#">YouTube</a>
-                    <a href="#">Instagram</a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
